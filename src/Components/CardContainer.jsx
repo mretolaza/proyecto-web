@@ -212,7 +212,9 @@ class Carrusel extends Component {
       backgroundSize: 'cover',
       transform: this.state.scale,
       transition: 'all .3s',
-      zIndex: this.state.zindexImg
+      zIndex: this.state.zindexImg,
+      marginLeft: '5%', 
+      marginTop: '3%'
     }
     const Txt = {
       color: 'white',
@@ -273,10 +275,10 @@ class CardContainer extends Component {
     return (
       <div style={Container}>
         <Carrusel width={940} height={340} text={'SCREENSHOT GALLERY'}></Carrusel>
-        <Card width={590} height={340} url={'url(https://cdn.2kgames.com/2k.com/img/bioshockinfinite_ss_01.jpg)'} text={'BIOSHOCK INFINITE SCREENSHOT'}></Card>
-        <Card width={470} height={440} url={'url(https://cdn.2kgames.com/2k.com/img/bioshockinfinite_ss_010.jpg)'} text={'BIOSHOCK INFINITE SCREENSHOT'}></Card>
-        <Card width={470} height={440} url={'url(https://cdn.2kgames.com/2k.com/img/bioshock_thecollection_thumbnail_launch.jpg)'} text={'BIOSHOCK: THE COLLECTION LAUNCH TRAILER'}></Card>
-        <Card width={590} height={440} url={'url(https://cdn.2kgames.com/2k.com/img/bioshockinfinite_ss_03.jpg)'} text={'BIOSHOCK INFINITE SCREENSHOT'}></Card>
+        <Card width={590} height={340} url={'url(https://lumiere-a.akamaihd.net/v1/images/eu_maleficient_poh_r_0e47b6f4.jpeg?region=0,0,500,575&width=480)'} text={'BIOSHOCK INFINITE SCREENSHOT'}></Card>
+        <Card width={470} height={440} url={'url(https://lumiere-a.akamaihd.net/v1/images/feat_500x575_677ec2e1.jpeg?region=0,0,500,575&width=480))'} text={'BIOSHOCK INFINITE SCREENSHOT'}></Card>
+        <Card width={470} height={440} url={'url(https://lumiere-a.akamaihd.net/v1/images/disney_poh_e7e86bd3.jpeg?region=0,0,500,576&width=480)'} text={'BIOSHOCK: THE COLLECTION LAUNCH TRAILER'}></Card>
+        <Card width={590} height={440} url={'url(https://lumiere-a.akamaihd.net/v1/images/disneyjunior-500x575_1_c1ddab5d.png?region=0,0,500,575&width=480)'} text={'BIOSHOCK INFINITE SCREENSHOT'}></Card>
       </div>
     )
   }

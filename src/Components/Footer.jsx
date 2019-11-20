@@ -1,11 +1,11 @@
 import React, { Component } from "react"
 
-const FooterLogo = require("../Images/front.png")
-const facebook = require("../Images/front.png")
-const twitter = require("../Images/front.png")
-const youtube = require("../Images/front.png")
-const twich = require("../Images/front.png")
-const instagram = require("../Images/front.png")
+const FooterLogo = require("../Images/magnifyingGlass1.png")
+const facebook = require("../Images/magnifyingGlass1.png")
+const twitter = require("../Images/magnifyingGlass1.png")
+const youtube = require("../Images/magnifyingGlass1.png")
+const twich = require("../Images/magnifyingGlass1.png")
+const instagram = require("../Images/magnifyingGlass1.png")
 
 class Text2k extends Component {
   constructor(props) {

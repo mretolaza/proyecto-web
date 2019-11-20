@@ -205,7 +205,6 @@ class TopBar extends Component {
       height: '80px',
       display: 'flex',
       justifyContent: 'space-between',
-      position: 'absolute',
       background: 'linear-gradient(180deg,rgba(0,0,0,.4),transparent)'
     }
 

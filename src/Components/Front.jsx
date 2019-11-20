@@ -2,41 +2,6 @@ import React, { Component } from "react"
 const front = require("../Images/front.png")
 const logo = require("../Images/Logofront.png")
 
-
-class TextDisneyBig extends Component {
-  constructor(props) {
-    super(props)
-    this.state = {
-      color: 'white'
-    }
-  }
-  mouseEnter() {
-    this.setState({ color: 'red' })
-
-  }
-  mouseLeave() {
-    this.setState({ color: 'white' })
-  }
-  render() {
-    const link = {
-      height: '40px',
-      marginBottom: '52px',
-      color: this.state.color,
-      textDecoration: 'none'
-    }
-    const text = {
-      marginTop: '20px',
-      fontSize: '18px',
-      fontFamily: 'Noto Sans Kannada,Noto Sans Gurmukhi UI,sans-serif',
-      fontWeight: '700',
-      marginLeft: '20px',
-    }
-    return (
-      <a onMouseOver={this.mouseEnter.bind(this)} onMouseLeave={this.mouseLeave.bind(this)}
-        style={link} href={this.props.href} targe="_blank"><h5 style={text}>{this.props.text}</h5></a>
-    )
-  }
-}
 class Button1 extends Component {
   constructor(props) {
     super(props)
@@ -54,14 +19,17 @@ class Button1 extends Component {
     const Margin = {
       border: '1px solid white',
       overflow: 'hidden',
-      width: '207px',
+      width: '120px',
       display: 'block',
       position: 'relative',
-      height: '40px',
+      height: '30px',
       display: 'flex',
       alignItems: 'center',
       marginBottom: '5px',
-      zIndex: '1'
+      padding: '13px 30px',
+      zIndex: '1', 
+      borderRadius: '15px', 
+      marginLeft: '5%'
     }
     const Txt = {
       color: 'white',
@@ -107,23 +75,23 @@ class Button2 extends Component {
   }
   render() {
     const Margin = {
-      backgroundColor: 'red',
+      backgroundColor: '#3270EA',
       overflow: 'hidden',
-      width: '187px',
-      display: 'block',
-      position: 'relative',
-      height: '40px',
+      width: '180px',
       display: 'flex',
+      position: 'relative',
+      height: '30px',
       alignItems: 'center',
-      marginBottom: '5px',
-      zIndex: '1'
+      zIndex: '1',
+      padding: '13px 30px',
+      borderRadius: '15px'
     }
     const Txt = {
       color: this.state.color,
       fontFamily: 'Noto Sans Kannada,Noto Sans Gurmukhi UI,sans-serif',
-      fontSize: '18px',
+      fontSize: '16px',
       fontWeight: '700',
-      marginLeft: '20px',
+      marginLeft: '50px',
       zIndex: '2'
     }
     const background = {
@@ -154,20 +122,19 @@ class ButtonMenu extends Component {
   }
   render() {
     const Footer = {
-      width: '190px',
+      width: '50%',
+      height: '120px', 
       display: 'flex',
-      flexDirection: 'column',
+      flexDirection: 'row',
       alignSelf: 'flex-end',
-      marginLeft: '44%',
-      margintop: '-15%',
+      marginLeft: '41%',
       position: 'absolute',
     }
 
     return (
       <div style={Footer}>
-        <Button2 text={"Ver más"} href={"https://disneylatino.com/peliculas/star-wars-el-ascenso-de-skywalker"}></Button2>
-        <Button1 text={"Comprar entradas"} href={"https://disneylatino.com/peliculas/star-wars-el-ascenso-de-skywalker"}></Button1>
-        <TextDisneyBig text={"Sitio Oficinal"} href={"https://disneylatino.com/"}></TextDisneyBig>
+        <Button2 text={"COMPRAR ENTRADAS"} href={"https://disneylatino.com/peliculas/star-wars-el-ascenso-de-skywalker"}></Button2>
+        <Button1 text={"VER MAS"} href={"https://disneylatino.com/peliculas/star-wars-el-ascenso-de-skywalker"}></Button1>
       </div>
     )
   }
@@ -182,7 +149,7 @@ class Logo extends Component {
       backgroundSize: 'cover',
       alignSelf: 'center',
       justifySelf: 'center',
-      marginLeft: '1195px'
+      marginLeft: '1128px'
     }
     const TitleFront = {
       fontFamily: 'Noto Sans Kannada,Noto Sans Gurmukhi UI,sans-serif',
@@ -199,8 +166,8 @@ class Logo extends Component {
     }
 
     const imageStyle = {
-      width: '510px',
-      height: '330px',
+      width: '500px',
+      height: '280px',
       marginRight: '80px',
       marginBottom: '0px'
     }
@@ -228,13 +195,14 @@ class Front extends Component {
   }
   render() {
     const Front = {
-      width: '100%',
+      width: '90%',
       height: '650px',
       backgroundImage: this.state.image,
       backgroundSize: 'cover',
       backgroundPosition: '50%',
       display: 'Flex',
-      justifyContent: 'Center'
+      justifyContent: 'Center',
+      marginLeft: '5%'
     }
     return (
       <div style={Front}>
