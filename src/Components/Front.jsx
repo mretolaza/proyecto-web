@@ -1,7 +1,9 @@
 import React, { Component } from "react"
 const front = require("../Images/front.png")
+const logo = require("../Images/Logofront.png")
 
-class Text2kBig extends Component {
+
+class TextDisneyBig extends Component {
   constructor(props) {
     super(props)
     this.state = {
@@ -25,7 +27,7 @@ class Text2kBig extends Component {
     const text = {
       marginTop: '20px',
       fontSize: '18px',
-      fontFamily: 'Roboto Condensed,sans-serif',
+      fontFamily: 'Noto Sans Kannada,Noto Sans Gurmukhi UI,sans-serif',
       fontWeight: '700',
       marginLeft: '20px',
     }
@@ -63,7 +65,7 @@ class Button1 extends Component {
     }
     const Txt = {
       color: 'white',
-      fontFamily: 'Roboto Condensed,sans-serif',
+      fontFamily: 'Noto Sans Kannada,Noto Sans Gurmukhi UI,sans-serif',
       fontSize: '18px',
       fontWeight: '700',
       marginLeft: '20px',
@@ -87,6 +89,7 @@ class Button1 extends Component {
     )
   }
 }
+
 class Button2 extends Component {
   constructor(props) {
     super(props)
@@ -117,7 +120,7 @@ class Button2 extends Component {
     }
     const Txt = {
       color: this.state.color,
-      fontFamily: 'Roboto Condensed,sans-serif',
+      fontFamily: 'Noto Sans Kannada,Noto Sans Gurmukhi UI,sans-serif',
       fontSize: '18px',
       fontWeight: '700',
       marginLeft: '20px',
@@ -145,7 +148,6 @@ class Button2 extends Component {
     )
   }
 }
-
 class ButtonMenu extends Component {
   constructor(props) {
     super(props)
@@ -163,10 +165,9 @@ class ButtonMenu extends Component {
 
     return (
       <div style={Footer}>
-        <Button1 text={"WATCH TRAILER"} href={"https://www.youtube.com/watch?v=uB9yYfKq4ZA"}></Button1>
-        <Button1 text={"MORE INFO"} href={"http://bioshockgame.com/"}></Button1>
-        <Button2 text={"BUY NOW"} href={"https://store.2k.com/store/Tk22k/en_IE/home/currency.EUR/ccRef./?"}></Button2>
-        <Text2kBig text={"OFFICIAL SITE"} href={"http://bioshockgame.com/"}></Text2kBig>
+        <Button2 text={"Ver más"} href={"http://bioshockgame.com/"}></Button2>
+        <Button1 text={"Comprar entradas"} href={"https://www.youtube.com/watch?v=uB9yYfKq4ZA"}></Button1>
+        <TextDisneyBig text={"Sitio Oficinal"} href={"https://disneylatino.com/"}></TextDisneyBig>
       </div>
     )
   }
@@ -177,30 +178,41 @@ class Logo extends Component {
   }
   render() {
     const Front = {
-      marginTop: '450px',
       width: '50%',
-      height: '310px',
       backgroundSize: 'cover',
       alignSelf: 'center',
       justifySelf: 'center',
-      marginBottom: 0
+      marginLeft: '1195px'
     }
     const TitleFront = {
-      fontFamily: 'Noto sans-serif Notoserif Matterhood',
+      fontFamily: 'Noto Sans Kannada,Noto Sans Gurmukhi UI,sans-serif',
       color: 'white',
-      fontSize: '100px',
-      lineHeight: '1.083333'
-    }
+      fontSize: '16px',
+      lineHeight: '1.5',
+      fontWeight: 'bold',
+      marginLeft: '160px'
 
+    }
     const contentDetail = {
       display: 'inline-block',
       textDecoration: 'none'
     }
+
+    const imageStyle = {
+      width: '510px',
+      height: '330px',
+      marginRight: '80px',
+      marginBottom: '0px'
+    }
+
     return (
       <div style={Front}>
-        <a style={contentDetail} href="https://disneylatino.com/felizcumplemickey">
+        <div>
+          <img style={imageStyle} src={logo} />
+        </div>
+        <a style={contentDetail} href="https://disneylatino.com/peliculas/star-wars-el-ascenso-de-skywalker">
           <p>
-            <b style={TitleFront}>#FelizCumpleMickey</b>
+            <b style={TitleFront}>PREVENTA DISPONIBLE</b>
           </p>
         </a>
       </div>
