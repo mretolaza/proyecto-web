@@ -165,8 +165,8 @@ class ButtonMenu extends Component {
 
     return (
       <div style={Footer}>
-        <Button2 text={"Ver más"} href={"http://bioshockgame.com/"}></Button2>
-        <Button1 text={"Comprar entradas"} href={"https://www.youtube.com/watch?v=uB9yYfKq4ZA"}></Button1>
+        <Button2 text={"Ver más"} href={"https://disneylatino.com/peliculas/star-wars-el-ascenso-de-skywalker"}></Button2>
+        <Button1 text={"Comprar entradas"} href={"https://disneylatino.com/peliculas/star-wars-el-ascenso-de-skywalker"}></Button1>
         <TextDisneyBig text={"Sitio Oficinal"} href={"https://disneylatino.com/"}></TextDisneyBig>
       </div>
     )
