@@ -25,7 +25,9 @@ class Card extends Component {
       backgroundSize: 'cover',
       transform: this.state.scale,
       transition: 'all .3s',
-      zIndex: this.state.zindexImg
+      zIndex: this.state.zindexImg, 
+      marginLeft:'3%',
+      marginTop: '2.8%'
     }
     const Txt = {
       color: 'white',
@@ -49,8 +51,10 @@ class Card extends Component {
       display: 'flex',
       alignItems: 'flex-end',
       transition: 'all .3s',
+      zIndex: this.state.zindexBack,
+      marginLeft:'3%',
+      marginTop: '2.8%'
 
-      zIndex: this.state.zindexBack
 
     }
     return (
@@ -153,7 +157,7 @@ class CarruselButtons extends Component {
       width: '52px',
       height: '50px',
       alignSelf: 'flex-end',
-      marginLeft: '887px',
+      marginLeft: '843px',
       display: 'flex',
       zIndex: '2',
       position: 'absolute'
@@ -212,9 +216,7 @@ class Carrusel extends Component {
       backgroundSize: 'cover',
       transform: this.state.scale,
       transition: 'all .3s',
-      zIndex: this.state.zindexImg,
-      marginLeft: '5%', 
-      marginTop: '3%'
+      zIndex: this.state.zindexImg
     }
     const Txt = {
       color: 'white',
@@ -230,7 +232,9 @@ class Carrusel extends Component {
       postion: 'absolute',
       gridColumn: '1/ 3',
       gridRow: '1',
-      display: 'flex'
+      display: 'flex',
+      marginLeft: '9%',
+      marginTop: '5%'
     }
     const Filter = {
       width: 'inherit',
@@ -274,7 +278,7 @@ class CardContainer extends Component {
     }
     return (
       <div style={Container}>
-        <Carrusel width={940} height={340} text={'SCREENSHOT GALLERY'}></Carrusel>
+        <Carrusel width={900} height={340} text={'SCREENSHOT GALLERY'}></Carrusel>
         <Card width={590} height={340} url={'url(https://lumiere-a.akamaihd.net/v1/images/eu_maleficient_poh_r_0e47b6f4.jpeg?region=0,0,500,575&width=480)'} text={'BIOSHOCK INFINITE SCREENSHOT'}></Card>
         <Card width={470} height={440} url={'url(https://lumiere-a.akamaihd.net/v1/images/feat_500x575_677ec2e1.jpeg?region=0,0,500,575&width=480))'} text={'BIOSHOCK INFINITE SCREENSHOT'}></Card>
         <Card width={470} height={440} url={'url(https://lumiere-a.akamaihd.net/v1/images/disney_poh_e7e86bd3.jpeg?region=0,0,500,576&width=480)'} text={'BIOSHOCK: THE COLLECTION LAUNCH TRAILER'}></Card>

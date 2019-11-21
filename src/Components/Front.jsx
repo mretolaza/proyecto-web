@@ -149,7 +149,7 @@ class Logo extends Component {
       backgroundSize: 'cover',
       alignSelf: 'center',
       justifySelf: 'center',
-      marginLeft: '1128px'
+      marginLeft: '1000px'
     }
     const TitleFront = {
       fontFamily: 'Noto Sans Kannada,Noto Sans Gurmukhi UI,sans-serif',
