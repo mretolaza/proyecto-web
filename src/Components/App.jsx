@@ -5,6 +5,7 @@ import CardContainer from "../Components/CardContainer.jsx"
 import CardComponent from "../Components/CardComponent.jsx"
 import Footer from "../Components/Footer.jsx"
 import { Container} from 'reactstrap'
+import CardImage from "../Components/CardImage.jsx"
 
 class App extends Component {
   constructor(props) {
@@ -19,6 +20,7 @@ class App extends Component {
         <Front></Front>
         <CardContainer></CardContainer>
         <CardComponent></CardComponent>
+        <CardImage></CardImage>
         <Footer></Footer>
       </div>
      </Container>
