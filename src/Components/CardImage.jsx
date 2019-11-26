@@ -96,9 +96,6 @@ class CardImage extends Component {
                     <Card width={800} height={350} url={front} text={'Malefica Dueña del mal'}></Card>
                     <Card width={800} height={350} marginLeft={5} url={front1} text={'#FELIZCUMPLEMICKY'}></Card>
                 </div>
-                <div>
-                    <img src={front} />
-                </div>
             </div>
         )
     }

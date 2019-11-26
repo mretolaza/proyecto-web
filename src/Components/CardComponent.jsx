@@ -46,50 +46,6 @@ class Button1 extends Component {
     }
 }
 
-class Button2 extends Component {
-    constructor(props) {
-        super(props)
-        this.state = {
-            transform: 'translateX(-102%)',
-            color: 'white'
-
-        }
-    }
-    mouseEnter() {
-        this.setState({ transform: 'translateX(-0.5%)', color: 'red' })
-    }
-    mouseLeave() {
-        this.setState({ transform: 'translateX(-102%)', color: 'white' })
-    }
-    render() {
-        const Margin = {
-            backgroundColor: '#3270EA',
-            overflow: 'hidden',
-            width: '180px',
-            display: 'flex',
-            position: 'relative',
-            height: '30px',
-            alignItems: 'center',
-            zIndex: '1',
-            padding: '13px 30px',
-            borderRadius: '15px'
-        }
-        const Txt = {
-            color: this.state.color,
-            fontFamily: 'Noto Sans Kannada,Noto Sans Gurmukhi UI,sans-serif',
-            fontSize: '16px',
-            fontWeight: '700',
-            marginLeft: '50px',
-            zIndex: '2'
-        }
-
-        return (
-            <div onMouseOver={this.mouseEnter.bind(this)} onMouseLeave={this.mouseLeave.bind(this)} style={Margin}>
-                <span style={Txt}>{this.props.text}</span>
-            </div>
-        )
-    }
-}
 class ButtonMenu extends Component {
     constructor(props) {
         super(props)
@@ -107,8 +63,8 @@ class ButtonMenu extends Component {
 
         return (
             <div style={Footer}>
-                <Button2 text={"COMPRAR ENTRADAS"} href={"https://disneylatino.com/peliculas/star-wars-el-ascenso-de-skywalker"}></Button2>
-                <Button1 text={"VER MAS"} href={"https://disneylatino.com/peliculas/star-wars-el-ascenso-de-skywalker"}></Button1>
+                <Button1 text={"APPLE TV"} href={"https://disneylatino.com/peliculas/star-wars-el-ascenso-de-skywalker"}></Button1>
+                <Button1 text={"GOOGLE PLAY"} href={"https://disneylatino.com/peliculas/star-wars-el-ascenso-de-skywalker"}></Button1>
             </div>
         )
     }
@@ -129,7 +85,7 @@ class Logo extends Component {
         const TitleFront = {
             fontFamily: 'Noto Sans Kannada,Noto Sans Gurmukhi UI,sans-serif',
             color: 'white',
-            fontSize: '16px',
+            fontSize: '80px',
             lineHeight: '1.5',
             fontWeight: 'bold',
             marginLeft: '160px'
@@ -144,9 +100,10 @@ class Logo extends Component {
         return (
             <div style={CardComponent}>
                 <a style={contentDetail} href="https://disneylatino.com/peliculas/star-wars-el-ascenso-de-skywalker">
-                    <p>
-                        <b style={TitleFront}>PREVENTA DISPONIBLE</b>
-                    </p>
+                    <h1>
+                        <b style={TitleFront}>El Rey León</b>
+                    </h1>
+                    <p>Disponible para descargar y disfrutar</p>
                 </a>
             </div>
         )
