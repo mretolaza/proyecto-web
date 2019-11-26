@@ -1,6 +1,5 @@
 import React, { Component } from "react"
-const front = require("../Images/front.png")
-const logo = require("../Images/Logofront.png")
+const front = "https://lumiere-a.akamaihd.net/v1/images/eu_the-lion-king_home-ents_no-disc_short-hero_v2_r_f1c8ed67.jpeg?region=0,0,1920,540&width=1200"
 
 class Button1 extends Component {
   constructor(props) {
@@ -27,8 +26,8 @@ class Button1 extends Component {
       alignItems: 'center',
       marginBottom: '5px',
       padding: '13px 30px',
-      zIndex: '1',
-      borderRadius: '15px',
+      zIndex: '1', 
+      borderRadius: '15px', 
       marginLeft: '5%'
     }
     const Txt = {
@@ -83,7 +82,7 @@ class Button2 extends Component {
       marginLeft: '50px',
       zIndex: '2'
     }
-
+    
     return (
       <div onMouseOver={this.mouseEnter.bind(this)} onMouseLeave={this.mouseLeave.bind(this)} style={Margin}>
         <span style={Txt}>{this.props.text}</span>
@@ -98,7 +97,7 @@ class ButtonMenu extends Component {
   render() {
     const Footer = {
       width: '50%',
-      height: '120px',
+      height: '120px', 
       display: 'flex',
       flexDirection: 'row',
       alignSelf: 'flex-end',
@@ -119,11 +118,12 @@ class Logo extends Component {
     super(props)
   }
   render() {
-    const Front = {
+    const CardComponent = {
       width: '50%',
       backgroundSize: 'cover',
       alignSelf: 'center',
       justifySelf: 'center',
+      height: '540px', 
       marginLeft: '1090px'
     }
     const TitleFront = {
@@ -140,16 +140,9 @@ class Logo extends Component {
       textDecoration: 'none'
     }
 
-    const imageStyle = {
-      width: '500px',
-      height: '280px'
-    }
 
     return (
-      <div style={Front}>
-        <div>
-          <img style={imageStyle} src={logo} />
-        </div>
+      <div style={CardComponent}>
         <a style={contentDetail} href="https://disneylatino.com/peliculas/star-wars-el-ascenso-de-skywalker">
           <p>
             <b style={TitleFront}>PREVENTA DISPONIBLE</b>
@@ -159,7 +152,7 @@ class Logo extends Component {
     )
   }
 }
-class Front extends Component {
+class CardComponent extends Component {
   constructor(props) {
     super(props)
     this.state = {
@@ -167,16 +160,17 @@ class Front extends Component {
     }
   }
   render() {
-    const Front = {
-      height: '650px',
+    const CardComponent = {
+      height: '500px',
       backgroundImage: this.state.image,
       backgroundSize: 'cover',
       backgroundPosition: '50%',
       display: 'Flex',
-      justifyContent: 'Center'
+      justifyContent: 'Center',
+      marginBottom: '100%'
     }
     return (
-      <div style={Front}>
+      <div style={CardComponent}>
         <ButtonMenu></ButtonMenu>
         <Logo></Logo>
       </div>
@@ -184,4 +178,4 @@ class Front extends Component {
   }
 }
 
-export default Front
+export default CardComponent

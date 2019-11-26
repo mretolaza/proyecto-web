@@ -2,6 +2,7 @@ import React, { Component } from "react"
 import TopBar from "../Components/TopBar.jsx"
 import Front from "../Components/Front.jsx"
 import CardContainer from "../Components/CardContainer.jsx"
+import CardComponent from "../Components/CardComponent.jsx"
 import Footer from "../Components/Footer.jsx"
 import { Container} from 'reactstrap'
 
@@ -17,6 +18,7 @@ class App extends Component {
         <TopBar></TopBar>
         <Front></Front>
         <CardContainer></CardContainer>
+        <CardComponent></CardComponent>
         <Footer></Footer>
       </div>
      </Container>

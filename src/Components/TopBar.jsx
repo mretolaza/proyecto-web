@@ -52,10 +52,10 @@ class Menu extends Component {
       height: '45px',
       margin: '25px'
     }
-  
+
     return (
       <div style={Margin}>
-      
+
       </div>
     )
   }
