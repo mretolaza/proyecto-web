@@ -1,11 +1,6 @@
 import React, { Component } from "react"
 
 const FooterLogo = require("../Images/disneyLogo.png")
-const facebook = require("../Images/magnifyingGlass1.png")
-const twitter = require("../Images/magnifyingGlass1.png")
-const youtube = require("../Images/magnifyingGlass1.png")
-const twich = require("../Images/magnifyingGlass1.png")
-const instagram = require("../Images/magnifyingGlass1.png")
 
 class Text2k extends Component {
   constructor(props) {
@@ -68,13 +63,13 @@ class TwoKL extends Component {
     return (
       <div style={Footer}>
         <img style={imgL} src={FooterLogo}></img>
-        <Text2k text={"NEWSLETTER"} href={"https://accounts.2k.com/en-US/newsletters/signup/"}></Text2k>
+        <Text2k text={""} href={""}></Text2k>
         <span style={span}>|</span>
-        <Text2k text={"PRIVACY POLICY"} href={"https://www.take2games.com/privacy/"}></Text2k>
+        <Text2k text={" "} href={""}></Text2k>
         <span style={span}>|</span>
-        <Text2k text={"TERMS OF SERVICE"} href={"https://www.take2games.com/legal/"}></Text2k>
+        <Text2k text={""} href={""}></Text2k>
         <span style={span}>|</span>
-        <Text2k text={"COOKIE POLICY"} href={"https://www.take2games.com/cookiepolicy/"}></Text2k>
+        <Text2k text={""} href={""}></Text2k>
       </div>
     )
   }
@@ -129,11 +124,7 @@ class TwoKR extends Component {
         <div style={Social}>
           <h5 style={text}>CONNECT</h5>
           <span style={span}>|</span>
-          <a href={"https://www.facebook.com/2K/"} targe="_blank"><img style={img} src={facebook} height="20" width="20" ></img></a>
-          <a href={"https://twitter.com/2K"} targe="_blank"><img style={img} src={twitter} height="20" width="20"></img></a>
-          <a href={"https://www.youtube.com/user/2KGames/"} targe="_blank"><img style={img} src={youtube} height="20" width="20"></img></a>
-          <a href={"https://www.twitch.tv/2k"} targe="_blank"><img style={img} src={twich} height="20" width="20"></img></a>
-          <a href={"https://www.instagram.com/2k/"} targe="_blank"><img style={img} src={instagram} height="20" width="20"></img></a>
+        
         </div>
         <h5 style={copyRight}>Política de Privacidad Términos de uso Política de privacidad de los niños Oportunidades laborales Anuncios basados en intereses
 © Disney © Disney•Pixar © ™ Lucasfilm LTD © Marvel. Reservados todos los derechos, Disney Entertainment</h5>
@@ -170,7 +161,7 @@ class Footer extends Component {
       marginRight: '18px',
       width: '218.666px',
       height: '82px',
-      backgroundImage: 'url(https://downloads.2kgames.com/2k/staging/datastore/645-esrb_M_BioShock_Infinite.png)',
+      backgroundImage: 'url()',
       backgroundSize: 'cover',
       justifySelf: 'center',
       alignSelf: 'flex-start',

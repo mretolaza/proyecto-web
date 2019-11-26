@@ -1,8 +1,9 @@
 import React, { Component } from "react"
-const magnifyingGlass1 = require("../Images/magnifyingGlass1.png")
-const magnifyingGlass2 = require("../Images/magnifyingGlass2.png")
+const magnifyingGlass1 = require("../Images/disneyLogo.png")
+const magnifyingGlass2 = require("../Images/disneyLogo.png")
+const  logImg = require("../Images/disneyLogo.png")
 
-class Logo2k extends Component {
+class LogoD extends Component {
   constructor(props) {
     super(props)
     this.state = {
@@ -23,7 +24,6 @@ class Logo2k extends Component {
       transform: 'translateX(-50%)',
       top: '24px',
       left: '49.5%',
-      backgroundImage: '',
       backgroundPosition: '0 0',
       backgroundSize: '302.5px 276.5px',
       width: '67px',
@@ -47,20 +47,23 @@ class Menu extends Component {
   }
   render() {
     const Margin = {
-      backgroundColor: 'red',
       width: '67px',
       height: '45px',
       margin: '25px'
     }
 
+    const styleImg = {
+      width: '150%',
+      height: '100%',
+    }
     return (
       <div style={Margin}>
-
+        <img style={styleImg} src={logImg} alt=""/>
       </div>
     )
   }
 }
-class Text2kSearchBar extends Component {
+class TextSB extends Component {
   constructor(props) {
     super(props)
     this.state = {
@@ -127,7 +130,7 @@ class SearchBar extends Component {
     }
     const Input = {
       width: '140px',
-      backgroundColor: 'transparent',
+      backgroundColor: 'whitesmoke',
       height: '19px',
       borderTop: 'thin solid #fff',
       borderRight: 'none',
@@ -150,9 +153,9 @@ class SearchBar extends Component {
           <img onMouseOver={this.mouseEnter.bind(this)} onMouseLeave={this.mouseLeave.bind(this)} style={img} src={this.state.src}></img>
         </div>
         <div style={Texts}>
-          <Text2kSearchBar text={"LOG-IN"} href={"https://accounts.2k.com/en-US/"}></Text2kSearchBar>
-          <Text2kSearchBar text={"  |  "} href={""}></Text2kSearchBar>
-          <Text2kSearchBar text={"SINGUP"} href={"https://accounts.2k.com/en-US/signup/?redirect_uri=https%3A%2F%2F2k.com%2Fen-US%2Fgame%2Fbioshock-infinite%2F&client_id=ed61ef7d2caa44a0dd172c59e35cf825"}></Text2kSearchBar>
+          <TextSB text={"LOG-IN"} href={"https://accounts.2k.com/en-US/"}></TextSB>
+          <TextSB text={"  |  "} href={""}></TextSB>
+          <TextSB text={"SINGUP"} href={"https://accounts.2k.com/en-US/signup/?redirect_uri=https%3A%2F%2F2k.com%2Fen-US%2Fgame%2Fbioshock-infinite%2F&client_id=ed61ef7d2caa44a0dd172c59e35cf825"}></TextSB>
         </div>
       </div>
     )
@@ -168,12 +171,12 @@ class TopBar extends Component {
       height: '80px',
       display: 'flex',
       justifyContent: 'space-between',
-      background: 'linear-gradient(180deg,rgba(0,0,0,.4),transparent)'
+      background: 'whitesmoke'
     }
 
     return (
       <div style={Footer}>
-        <Logo2k></Logo2k>
+        <LogoD></LogoD>
         <Menu></Menu>
         <SearchBar></SearchBar>
       </div>
