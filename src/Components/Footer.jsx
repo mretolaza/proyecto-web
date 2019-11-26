@@ -1,6 +1,6 @@
 import React, { Component } from "react"
 
-const FooterLogo = require("../Images/magnifyingGlass1.png")
+const FooterLogo = require("../Images/disneyLogo.png")
 const facebook = require("../Images/magnifyingGlass1.png")
 const twitter = require("../Images/magnifyingGlass1.png")
 const youtube = require("../Images/magnifyingGlass1.png")
@@ -61,9 +61,13 @@ class TwoKL extends Component {
       marginBottom: '10px',
       color: 'rgb(86,86,86)'
     }
+    const imgL = {
+      width: '180px', 
+      height: '100px' 
+    }
     return (
       <div style={Footer}>
-        <img src={FooterLogo}></img>
+        <img style={imgL} src={FooterLogo}></img>
         <Text2k text={"NEWSLETTER"} href={"https://accounts.2k.com/en-US/newsletters/signup/"}></Text2k>
         <span style={span}>|</span>
         <Text2k text={"PRIVACY POLICY"} href={"https://www.take2games.com/privacy/"}></Text2k>
@@ -87,7 +91,7 @@ class TwoKR extends Component {
       flexDirection: 'column'
     }
     const Social = {
-      width: '500',
+      width: '500%',
       display: 'flex',
       justifyContent: 'flex-end',
       height: '45px',
@@ -131,7 +135,8 @@ class TwoKR extends Component {
           <a href={"https://www.twitch.tv/2k"} targe="_blank"><img style={img} src={twich} height="20" width="20"></img></a>
           <a href={"https://www.instagram.com/2k/"} targe="_blank"><img style={img} src={instagram} height="20" width="20"></img></a>
         </div>
-        <h5 style={copyRight}>Copyright © 2018 Take-Two Interactive Software, Inc Trademarks belong to their respective owners. All rights reserved.</h5>
+        <h5 style={copyRight}>Política de Privacidad Términos de uso Política de privacidad de los niños Oportunidades laborales Anuncios basados en intereses
+© Disney © Disney•Pixar © ™ Lucasfilm LTD © Marvel. Reservados todos los derechos, Disney Entertainment</h5>
       </div>
     )
   }
@@ -144,7 +149,7 @@ class Footer extends Component {
     const Footer = {
       width: '100%',
       height: '100px',
-      backgroundColor: 'black',
+      backgroundColor: 'ghostwhite',
       zIndex: '2',
       display: 'flex',
       alignItems: 'flex-end',
@@ -152,8 +157,8 @@ class Footer extends Component {
     }
     const Footer2k = {
       width: '100%',
-      height: '75px',
-      backgroundColor: 'black',
+      height: '250px',
+      backgroundColor: 'ghostwhite',
       zIndex: '2',
       display: 'flex',
       alignItems: 'flex-end',
