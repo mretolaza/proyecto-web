@@ -47,52 +47,15 @@ class Menu extends Component {
   }
   render() {
     const Margin = {
-      backgroundColor: 'trasparent',
+      backgroundColor: 'red',
       width: '67px',
       height: '45px',
       margin: '25px'
     }
-    const line = {
-      backgroundColor: '#fff',
-      height: '2px',
-      width: '42px',
-      position: 'absolute',
-      top: '0',
-      bottom: '0',
-      left: '0',
-      right: '0',
-      margin: '35px'
-    }
-    const line2 = {
-      backgroundColor: '#fff',
-      height: '2px',
-      width: '30px',
-      position: 'absolute',
-      top: '0',
-      bottom: '0',
-      left: '0',
-      right: '0',
-      margin: '35px',
-      marginTop: '45px'
-    }
-    const line3 = {
-      backgroundColor: '#fff',
-      height: '3px',
-      width: '10px',
-      position: 'absolute',
-      top: '0',
-      bottom: '0',
-      left: '0',
-      right: '0',
-      margin: '35px',
-      marginTop: '55px'
-    }
-
+  
     return (
       <div style={Margin}>
-        <i style={line}></i>
-        <i style={line2}></i>
-        <i style={line3}></i>
+      
       </div>
     )
   }

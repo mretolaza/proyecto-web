@@ -39,19 +39,8 @@ class Button1 extends Component {
       marginLeft: '20px',
       zIndex: '2'
     }
-    const background = {
-      border: '1px solid red',
-      backgroundColor: 'red',
-      position: 'absolute',
-      width: '207px',
-      height: '44px',
-      zIndex: '2',
-      transform: this.state.transform,
-      transition: 'transform .25s ease-in'
-    }
     return (
       <div onMouseOver={this.mouseEnter.bind(this)} onMouseLeave={this.mouseLeave.bind(this)} style={Margin}>
-        <div style={background}></div>
         <span style={Txt}>{this.props.text}</span>
       </div>
     )
@@ -94,23 +83,9 @@ class Button2 extends Component {
       marginLeft: '50px',
       zIndex: '2'
     }
-    const background = {
-      border: '1px solid white',
-      backgroundColor: 'white',
-      position: 'absolute',
-      width: '187px',
-      height: '42px',
-      zIndex: '2',
-      transform: this.state.transform,
-      display: 'flex',
-      alignItems: 'center',
-      transition: 'transform .25s ease-in'
-    }
-
+    
     return (
       <div onMouseOver={this.mouseEnter.bind(this)} onMouseLeave={this.mouseLeave.bind(this)} style={Margin}>
-        <div style={background}>
-        </div>
         <span style={Txt}>{this.props.text}</span>
       </div>
     )
@@ -149,7 +124,7 @@ class Logo extends Component {
       backgroundSize: 'cover',
       alignSelf: 'center',
       justifySelf: 'center',
-      marginLeft: '1000px'
+      marginLeft: '1090px'
     }
     const TitleFront = {
       fontFamily: 'Noto Sans Kannada,Noto Sans Gurmukhi UI,sans-serif',
@@ -167,9 +142,7 @@ class Logo extends Component {
 
     const imageStyle = {
       width: '500px',
-      height: '280px',
-      marginRight: '80px',
-      marginBottom: '0px'
+      height: '280px'
     }
 
     return (
@@ -195,14 +168,12 @@ class Front extends Component {
   }
   render() {
     const Front = {
-      width: '90%',
       height: '650px',
       backgroundImage: this.state.image,
       backgroundSize: 'cover',
       backgroundPosition: '50%',
       display: 'Flex',
-      justifyContent: 'Center',
-      marginLeft: '5%'
+      justifyContent: 'Center'
     }
     return (
       <div style={Front}>
