@@ -86,7 +86,7 @@ class CardContainer extends Component {
       marginBottom: '-15%'
     }
     return (
-      <div className="row">
+      <div>
         <div className="col-sm-12 bound" style={Container}>
           <Card width={400} height={440} url={'url(https://lumiere-a.akamaihd.net/v1/images/eu_maleficient_poh_r_0e47b6f4.jpeg?region=0,0,500,575&width=480)'} text={'Malefica Dueña del mal'}></Card>
           <Card width={400} height={440} marginLeft={5} url={'url(https://lumiere-a.akamaihd.net/v1/images/feat_500x575_677ec2e1.jpeg?region=0,0,500,575&width=320)'} text={'#FELIZCUMPLEMICKY'}></Card>

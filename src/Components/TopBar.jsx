@@ -1,6 +1,4 @@
 import React, { Component } from "react"
-const magnifyingGlass1 = require("../Images/disneyLogo.png")
-const magnifyingGlass2 = require("../Images/disneyLogo.png")
 const  logImg = require("../Images/disneyLogo.png")
 
 class LogoD extends Component {
@@ -95,72 +93,7 @@ class TextSB extends Component {
     )
   }
 }
-class SearchBar extends Component {
-  constructor(props) {
-    super(props)
-    this.state = {
-      src: `${magnifyingGlass1}`
-    }
-  }
-  mouseEnter() {
-    this.setState({ src: `${magnifyingGlass2}` })
-  }
-  mouseLeave() {
-    this.setState({ src: `${magnifyingGlass1}` })
-  }
-  render() {
-    const Logo = {
-      position: 'absolute',
-      display: 'inline-block',
-      transform: 'translateX(-50%)',
-      top: '26px',
-      left: '92%',
-      backgroundPosition: '0 0',
-      backgroundSize: '302.5px 276.5px',
-      width: '140px',
-      height: '45px',
-      display: 'flex',
-      flexDirection: 'column',
-    }
-    const Texts = {
-      marginTop: '-16px',
-      display: 'flex',
-      justifyContent: 'space-between',
 
-    }
-    const Input = {
-      width: '140px',
-      backgroundColor: 'whitesmoke',
-      height: '19px',
-      borderTop: 'thin solid #fff',
-      borderRight: 'none',
-      borderBottom: 'thin solid #fff',
-      borderLeft: 'thin solid #fff',
-      color: '#fff',
-    }
-    const sBar = {
-      display: 'flex',
-    }
-    const img = {
-      marginLeft: '-24px',
-      width: '24px',
-      height: '22px'
-    }
-    return (
-      <div style={Logo}>
-        <div style={sBar}>
-          <input type="text" placeholder="SEARCH" style={Input}></input>
-          <img onMouseOver={this.mouseEnter.bind(this)} onMouseLeave={this.mouseLeave.bind(this)} style={img} src={this.state.src}></img>
-        </div>
-        <div style={Texts}>
-          <TextSB text={"LOG-IN"} href={"https://accounts.2k.com/en-US/"}></TextSB>
-          <TextSB text={"  |  "} href={""}></TextSB>
-          <TextSB text={"SINGUP"} href={"https://accounts.2k.com/en-US/signup/?redirect_uri=https%3A%2F%2F2k.com%2Fen-US%2Fgame%2Fbioshock-infinite%2F&client_id=ed61ef7d2caa44a0dd172c59e35cf825"}></TextSB>
-        </div>
-      </div>
-    )
-  }
-}
 class TopBar extends Component {
   constructor(props) {
     super(props)
@@ -178,7 +111,6 @@ class TopBar extends Component {
       <div style={Footer}>
         <LogoD></LogoD>
         <Menu></Menu>
-        <SearchBar></SearchBar>
       </div>
     )
   }
